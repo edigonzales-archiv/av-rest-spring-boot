@@ -1,4 +1,6 @@
 java -jar /Users/stefan/Apps/ili2pg/ili2pg-3.5.0.jar --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --dbschema av_avdpool_ng --sqlEnableNull --createFkIdx --createGeomIdx --createBasketCol --models DM01AVSO24LV95 --disableValidation --nameByTopic --defaultSrsCode 2056 --schemaimport
 
+java -jar /home/stefan/Apps/ili2pg/ili2pg-3.5.0.jar --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --dbschema av_avdpool_ng --sqlEnableNull --createFkIdx --createGeomIdx --createBasketCol --models DM01AVSO24LV95 --disableValidation --nameByTopic --defaultSrsCode 2056 --schemaimport
+
 
 java -jar /Users/stefan/Apps/ili2pg/ili2pg-3.5.0.jar --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --dbschema av_avdpool_ng --sqlEnableNull --createFkIdx --createGeomIdx --createBasketCol --models DM01AVSO24LV95 --disableValidation --nameByTopic --defaultSrsCode 2056 --dataset XXXX --replace YYYYY.itf

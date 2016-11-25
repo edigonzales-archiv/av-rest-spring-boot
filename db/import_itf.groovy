@@ -12,16 +12,16 @@ import ch.ehi.sqlgen.generator.SqlConfiguration
 def list = []
 
 def ant = new AntBuilder()
-ant.echo('hello from Ant!')
+//ant.echo('hello from Ant!')
 
-def dir = new File("/Users/stefan/tmp/av_tmp_test/")
+def dir = new File("/home/stefan/tmp/itf/")
 dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.(?i)zip$/) { file ->
   ant.unzip(src:file,
             dest:dir,
             overwrite:"true")
 }
 
-dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.(?i)itf$/) { file ->
+dir.traverse(type: FileType.FILES, nameFilter: ~/^(1|2)[a-zA-Z]?.*\.(?i)itf$/) { file ->
   list << file
 }
 
