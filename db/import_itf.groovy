@@ -14,7 +14,7 @@ def list = []
 def ant = new AntBuilder()
 //ant.echo('hello from Ant!')
 
-def dir = new File("/home/stefan/tmp/itf/")
+def dir = new File("/Users/stefan/tmp/av-ig/")
 dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.(?i)zip$/) { file ->
   ant.unzip(src:file,
             dest:dir,
